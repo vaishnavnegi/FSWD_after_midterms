@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>RandomColorCircle</title>
+        <style>
+            #circle
+            {
+                height: 500;
+                width: 500;
+                background-color: crimson;
+                border: black;
+                border-radius: 50%;
+                border-style: dashed;
+            }
+        </style>
+    </head>
+    <body style="background-color: darkorange;">
+        <div id="circle"></div>
+        <script type="text/javascript">
+            function RandomColor()
+            {
+                valuepool='123456789ABCDEF';
+                color='#';
+                for(var i=0;i<6;i++)
+                {
+                    rand = Math.ceil(Math.random()*14);
+                    color = color + valuepool[rand];
+                }
+                return color;
+            }
+            circle = document.getElementById('circle')
+            circle.onclick = function (){
+                color = RandomColor();
+                circle.style.backgroundColor = color;
+
+            }  
+        </script>
+    </body>
+</html>

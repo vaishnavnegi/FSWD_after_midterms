@@ -1,0 +1,22 @@
+   <html>
+       <head>
+           <title>Random Number Generation</title>
+       </head>
+       <body>
+           <h1>First Number : </h1>
+           <p id="v1">xx</p>
+           <h1>Second Number : </h1>
+           <p id="v2">xx</p>
+           <h1>Refresh to change.</h1>
+           <script type="text/javascript">
+                function RandomInRange(min ,max)
+                {
+                    value1=Math.ceil(Math.random()*(max-min)+min); //min,max both inclusive
+                    value2=Math.floor(Math.random()*(max-min)+min); //min inclusive,max exclusive
+                    document.getElementById('v1').innerText=value1;
+                    document.getElementById('v2').innerText=value2;
+                }
+                RandomInRange(0,100);
+           </script>
+       </body>
+   </html>
