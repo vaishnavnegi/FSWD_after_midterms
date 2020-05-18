@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Tables</title>
+        <style>
+            table{
+                width: 50%;
+            }
+            table,tr,th,td{
+                border-collapse: collapse;
+                text-align: left;
+            }
+            .topbottomBorder{
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            .bottomBorder{
+                border-bottom: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <col style="width: 20%;">
+            <col style="width: 15%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+            <caption>Academic Details</caption>
+            <thead>
+                <tr class="topbottomBorder">
+                    <th>Examination</th>
+                    <th>University</th>
+                    <th>Branch</th>
+                    <th colspan="2">Year/CPI</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr class="bottomBorder">
+                    <td>10th</td>
+                    <td rowspan="2">APS Clement Town</td>
+                    <td>-</td>
+                    <td>2015</td>
+                    <td>95%</td>
+                </tr>
+                <tr class="bottomBorder">
+                    <td>12th</td>
+                    <td>PCM with CS</td>
+                    <td>2017</td>
+                    <td>94.6%</td>
+                </tr>
+                <tr class="bottomBorder">
+                    <td>BTECH 1st sem</td>
+                    <td rowspan="2">GEU</td>
+                    <td>PCM with CS</td>
+                    <td>2017</td>
+                    <td>94.6%</td>
+                </tr>
+                <tr class="bottomBorder">
+                    <td>BTECH 2nd sem</td>
+                    <td>PCM with CS</td>
+                    <td>2017</td>
+                    <td>94.6%</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
