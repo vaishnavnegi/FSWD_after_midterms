@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TIMERS</title>
+        <style>
+            button{
+                width: 200px;
+                height: 110px;
+                background-color: mediumslateblue;
+                font-family: monospace;
+                font-size: 15px;
+                color: crimson;
+                border-radius: 15px;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 8px 20px 0 rgba(0,0,0,0.19);
+            }
+            button:hover{
+                background-color: springgreen;
+                color: darkviolet;
+            }
+        </style>
+        <body>
+            <div>
+              <p><strong>CHECK OUT THESE AWESOME BUTTONS</strong></p>  
+              <button onclick="delayedalert()">Create Event</button>
+              <button onclick="cancelalert()">Cancel Event</button>
+            </div>
+            <script>
+                var timeout;
+                function delayedalert()
+                {
+                    //timeout= setTimeout(alert,2*1000,"Hello Students");
+                    timeout= setInterval(alert,2*1000,"Hello Students");
+                }
+                function cancelalert()
+                {
+                    //clearTimeout(timeout);
+                    clearInterval(timeout);
+                }
+            </script>
+        </body>
+    </head>
+</html>

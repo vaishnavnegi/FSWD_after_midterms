@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ON/OFF</title>
+    </head>
+    <body style="background-color: black;">
+        <img src="off.png" width="750" height="800px" id="bulb">
+        <input type="button" id="btn" value="ON" style="text-align: center; background-color: ghostwhite; width: 100px; height :200px;" >
+        <script type="text/javascript">
+                document.getElementById('btn').onclick = function(){
+                    var btnval=document.getElementById('btn').value;
+                    if(btnval == 'ON')
+                    {
+                        document.getElementById('bulb').src="on.png";
+                        document.getElementById('btn').value='OFF';
+                        document.getElementById()
+                    }
+                    else
+                    {
+                        document.getElementById('bulb').src="off.png";
+                        document.getElementById('btn').value='ON';
+                    }
+                }
+        </script>
+    </body>
+</html>
